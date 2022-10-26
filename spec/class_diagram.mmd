@@ -1,0 +1,39 @@
+classDiagram
+empty diamond from user to app 
+
+User --o ScooterApp : registers \n rent
+Scooter --o ScooterApp : 
+User -- Scooter : hires
+
+class Scooter {
+    +string station
+    +string user
+    +number serial
+    +number charge
+    +boolean isBroken
+    +boolean docked
+
+    +rent()
+    +dock(station)
+    +recharge()
+    +requestRepair()
+}
+
+class User {
+    +string username 
+    +string password
+    +number age
+
+}
+
+class ScooterApp {
+    +string stations
+    +object registeredUser
+    +staticArray scooterSessions
+
+    +register(user)
+    +logIn(username, password)
+    +addScooter(location, scooter)
+    +removeScooter(scooterToRemove)
+
+}
