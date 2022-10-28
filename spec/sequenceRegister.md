@@ -1,8 +1,8 @@
 # ScooterApp
 
-## Class Diagram
+## Sequence Diagram - Register
 
-This is the class diagram for scooters
+The flow for registering a user to the ScooterApp.
 
 ```mermaid
 
