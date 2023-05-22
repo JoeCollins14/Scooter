@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --verbose --collect-coverage"
+    "test:coverage": "jest --verbose --collect-coverage",
+    "test:scooter": "jest ./tests/Scooter.test.js",
+    "test:scooterapp": "jest ./tests/ScooterApp.test.js",
+    "test:scooteruser": "jest ./tests/User.test.js"
   },
   "repository": {
     "type": "git",

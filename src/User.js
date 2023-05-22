@@ -4,6 +4,8 @@ class User {
     this.username = username;
     this.password = password;
     this.age = age;
+    this.loggedIn = false;
+    this.accountChange = 0;
   }
 }
 
